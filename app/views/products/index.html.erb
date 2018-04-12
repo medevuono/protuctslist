@@ -16,6 +16,9 @@
             <td>
               <%= product.categories.map(&:name).join(", ") %>
             </td>
+            <td>
+              <%= link_to "Editar producto", edit_product_path(product) %>
+            </td>
           </tr>
         <% end %>
       </table>
